@@ -1,10 +1,12 @@
 import React from 'react'
 import button from '../src/styles/Button.module.scss'
 
+import Navbar from './components/Navbar'
+
 const App = () => {
   return (
     <div>
-      <button className={button}>3</button>
+     <Navbar />
     </div>
   )
 }
