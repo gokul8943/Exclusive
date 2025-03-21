@@ -6,25 +6,6 @@ import { FaShoppingBag, FaUsers, FaUserCheck, FaTag, FaTruck, FaHeadset, FaShiel
 const About = () => {
   return (
     <div className={styles.our_story_page}>
-      {/* Header/Navigation */}
-      <header className={styles.header}>
-        <div className={styles.logo}>Exclusive</div>
-        <nav className={styles.nav}>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </nav>
-        <div className="icons">
-          <a href="#" className={styles.icon_link}><i className={styles.fa_fa_search}></i></a>
-          <a href="#" className={styles.icon_link}><i className={styles.fa_fa_heart}></i></a>
-          <a href="#" className={styles.icon_link}><i className={styles.fa_fa_shopping_cart}></i></a>
-          <a href="#" className={styles.icon_link}><i className={styles.fa_fa_user}></i></a>
-        </div>
-      </header>
-
       {/* Breadcrumb */}
       <div className={styles.breadcrumb}>
         <a href="#">Home</a> / <span>About</span>
