@@ -87,6 +87,3 @@ http://localhost:5000/api-docs
 
 ---
 
-## 🚀 You're all set! 🎉
-If you encounter any issues, feel free to open an issue or reach out to the team.
-
