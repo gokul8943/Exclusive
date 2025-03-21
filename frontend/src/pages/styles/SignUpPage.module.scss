@@ -80,6 +80,33 @@
             background-color: darken(#e73c3e, 5%);
           }
         }
+        .login{
+          display: flex;
+           align-items: center;
+           gap: 2rem;
+        }
+        .login_button{
+          width: 100%;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background-color: #e73c3e;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 1rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          
+          &:hover {
+            background-color: darken(#e73c3e, 5%);
+          }
+        }
+
+        .forgot_link{
+            color: #e73c3e;
+            width: 100%;
+        }
         
         .google_button {
           width: 100%;

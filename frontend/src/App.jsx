@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import SignupPage from './pages/SignUpPage'
 import global from './styles/global.module.scss'
 import ContactPage from './pages/ContactPage'
+import Login from './pages/Login'
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
       <div className={global.container_part}>
         <Routes>
           <Route path='/signup' element={<SignupPage />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/contact' element={<ContactPage />} />
-
+     
         </Routes>
       </div>
     </div>
