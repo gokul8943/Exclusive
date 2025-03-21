@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signup } from '../slices/userSlice';
 import styles from './styles/SignUpPage.module.scss';
 import{ useNavigate }from 'react-router-dom'
+import phone from '../assets/images/phone.png'
 
 const SignupPage = () => {
   const [name, setName] = useState('');
@@ -23,7 +24,7 @@ const SignupPage = () => {
     <div className={styles.signup_container}>
       <div className={styles.signup_image}>
         <img
-          src="/path-to-your-shopping-image.jpg"
+          src={phone}
           alt="Online shopping illustration with phone and cart"
           className={styles.shopping_image}
         />

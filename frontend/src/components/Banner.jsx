@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import  styles from './styles/Banner.module.scss';
+import img1 from '../../src/assets/images/airdopes1.png'
 
 const IphoneBanner = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   
-  // Array of banner slides (for multiple banners if needed)
+
   const banners = [
     {
       id: 1,
       brand: 'Apple',
-      logo: '/path-to-apple-logo.svg', // Replace with actual Apple logo path
+      logo: {img1}, 
       product: 'iPhone 14 Series',
       discount: 'Up to 10% off Voucher',
-      image: '/path-to-iphone-image.png', // Replace with actual iPhone image path
+      image: img1, 
       cta: 'Shop Now'
     }
-    // Add more banners here if needed
+   
   ];
   
-  // Auto slide functionality (optional)
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % banners.length);

@@ -1,13 +1,15 @@
 import React from 'react';
 import { FaHeart, FaStar, FaEye, FaShoppingCart } from 'react-icons/fa';
 import styles from './styles/FlashSales.module.scss';
+import img1 from '../assets/images/airdopes1.png'
+import img2 from '../assets/images/airdopes.png'
 
 const FlashSales = () => {
   const products = [
     {
       id: 1,
       name: 'PlayStation 5 Controller',
-      image: '/images/ps5-controller.png',
+      image: img1,
       price: 98.00,
       oldPrice: 160.00,
       discount: 35,
@@ -16,7 +18,7 @@ const FlashSales = () => {
     {
       id: 2,
       name: 'Gaming Monitor 4K',
-      image: '/images/monitor.png',
+      image: img2,
       price: 650.00,
       oldPrice: 1050.00,
       discount: 35,
@@ -25,7 +27,7 @@ const FlashSales = () => {
     {
       id: 3,
       name: 'PlayStation VR Headset',
-      image: '/images/ps-vr.png',
+      image: img1,
       price: 320.00,
       oldPrice: 420.00,
       discount: 24,
@@ -34,7 +36,7 @@ const FlashSales = () => {
     {
       id: 4,
       name: 'Gaming Controller',
-      image: '/images/controller.png',
+      image: img2,
       price: 55.00,
       oldPrice: 80.00,
       discount: 30,

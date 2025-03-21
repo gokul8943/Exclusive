@@ -2,7 +2,8 @@
 import React from 'react';
 import styles from './styles/About.module.scss';
 import { FaShoppingBag, FaUsers, FaUserCheck, FaTag, FaTruck, FaHeadset, FaShieldAlt } from 'react-icons/fa';
-
+import phone from '../assets/images/phone.png'
+import people from '../assets/images/people.png'
 const About = () => {
   return (
     <div className={styles.our_story_page}>
@@ -29,7 +30,7 @@ const About = () => {
           </p>
         </div>
         <div className={styles.story_image}>
-          <img src="/path-to-shopping-image.jpg" alt="Shopping Friends" />
+          <img src={phone} alt="Shopping Friends" />
         </div>
       </section>
 
@@ -72,7 +73,7 @@ const About = () => {
       <section className={styles.team_section}>
         <div className={styles.team_member}>
           <div className={styles.member_image}>
-            <img src="/path-to-tom-cruise.jpg" alt="Tom Cruise" />
+            <img src={people} alt="Tom Cruise" />
           </div>
           <h3>Tom Cruise</h3>
           <p>Founder & Chairman</p>
@@ -85,7 +86,7 @@ const About = () => {
 
         <div className={styles.team_member}>
           <div className={styles.member_image}>
-            <img src="/path-to-emma-watson.jpg" alt="Emma Watson" />
+            <img src={people} alt="Emma Watson" />
           </div>
           <h3>Emma Watson</h3>
           <p>Managing Director</p>
@@ -98,7 +99,7 @@ const About = () => {
 
         <div className={styles.team_member}>
           <div className={styles.member_image}>
-            <img src="/path-to-will-smith.jpg" alt="Will Smith" />
+          <img src={people} alt="Will Smith" />
           </div>
           <h3>Will Smith</h3>
           <p>Product Designer</p>
