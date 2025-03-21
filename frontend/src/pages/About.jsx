@@ -1,6 +1,6 @@
 // OurStoryPage.jsx
 import React from 'react';
-import styles from './styles/About.modules.scss';
+import styles from './styles/About.module.scss';
 import { FaShoppingBag, FaUsers, FaUserCheck, FaTag, FaTruck, FaHeadset, FaShieldAlt } from 'react-icons/fa';
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
           </ul>
         </nav>
         <div className="icons">
-          <a href="#" className={styles.icon-link}><i className={styles.fa_fa_search}></i></a>
+          <a href="#" className={styles.icon_link}><i className={styles.fa_fa_search}></i></a>
           <a href="#" className={styles.icon_link}><i className={styles.fa_fa_heart}></i></a>
           <a href="#" className={styles.icon_link}><i className={styles.fa_fa_shopping_cart}></i></a>
           <a href="#" className={styles.icon_link}><i className={styles.fa_fa_user}></i></a>
