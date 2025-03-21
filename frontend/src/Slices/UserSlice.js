@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { loginUser, registerUser } from '../service/authApi';
 
 // Login action
-export const login = createAsyncThunk('user/login', async (credentials, { rejectWithValue }) => {
+export const login = createAsyncThunk('/user/login', async (credentials, { rejectWithValue }) => {
   try {
     const userData = await loginUser(credentials);
     return userData;
@@ -12,7 +12,7 @@ export const login = createAsyncThunk('user/login', async (credentials, { reject
 });
 
 // Signup action
-export const signup = createAsyncThunk('user/signup', async (userData, { rejectWithValue }) => {
+export const signup = createAsyncThunk('/user/signup', async (userData, { rejectWithValue }) => {
   try {
     const newUser = await registerUser(userData);
     return newUser;

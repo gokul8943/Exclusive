@@ -15,6 +15,9 @@ const SignupPage = () => {
     dispatch(signup({ name, email, password }));
   };
 
+  console.log(name,email,password);
+  
+
   return (
     <div className={styles.signup_container}>
       <div className={styles.signup_image}>
