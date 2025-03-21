@@ -1,14 +1,5 @@
 # Project Setup Guide
 
-## Prerequisites
-Make sure you have the following installed:
-- **Node.js** (Latest LTS recommended) → [Download](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn**
-- **MongoDB** (if using a local database) → [Download](https://www.mongodb.com/try/download/community)
-- **Git** (optional) → [Download](https://git-scm.com/)
-
----
-
 ## 1️⃣ Clone the Repository
 ```sh
 # Using HTTPS
