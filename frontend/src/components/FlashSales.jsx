@@ -3,6 +3,8 @@ import { FaHeart, FaStar, FaEye, FaShoppingCart } from 'react-icons/fa';
 import styles from './styles/FlashSales.module.scss';
 import img1 from '../assets/images/airdopes1.png'
 import img2 from '../assets/images/airdopes.png'
+import phone from '../assets/images/phone.png'
+import wash from '../assets/images/wash.png'
 
 const FlashSales = () => {
   const products = [
@@ -18,7 +20,7 @@ const FlashSales = () => {
     {
       id: 2,
       name: 'Gaming Monitor 4K',
-      image: img2,
+      image: phone,
       price: 650.00,
       oldPrice: 1050.00,
       discount: 35,
@@ -36,7 +38,7 @@ const FlashSales = () => {
     {
       id: 4,
       name: 'Gaming Controller',
-      image: img2,
+      image: wash,
       price: 55.00,
       oldPrice: 80.00,
       discount: 30,

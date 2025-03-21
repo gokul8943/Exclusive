@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import  styles from './styles/Banner.module.scss';
-import img1 from '../../src/assets/images/airdopes1.png'
+import img1 from '../../src/assets/images/img.png'
 
 const IphoneBanner = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -10,7 +10,7 @@ const IphoneBanner = () => {
     {
       id: 1,
       brand: 'Apple',
-      logo: {img1}, 
+      logo: img1, 
       product: 'iPhone 14 Series',
       discount: 'Up to 10% off Voucher',
       image: img1, 
