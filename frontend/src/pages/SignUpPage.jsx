@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { signup } from '../Slices/UserSlice';
+import { signup } from '../slices/userSlice';
 import styles from './styles/SignUpPage.module.scss';
 
 const SignupPage = () => {
@@ -18,45 +18,45 @@ const SignupPage = () => {
   return (
     <div className={styles.signup_container}>
       <div className={styles.signup_image}>
-        <img 
-          src="/path-to-your-shopping-image.jpg" 
-          alt="Online shopping illustration with phone and cart" 
+        <img
+          src="/path-to-your-shopping-image.jpg"
+          alt="Online shopping illustration with phone and cart"
           className={styles.shopping_image}
         />
       </div>
-      
+
       <div className={styles.signup_form}>
         <h1>Create an account</h1>
         <p>Enter your details below</p>
-        
+
         <form onSubmit={handleSubmit}>
           <div className={styles.input_group}>
-            <input 
-              type="text" 
-              placeholder="Name" 
+            <input
+              type="text"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              required 
+              required
             />
           </div>
-          
+
           <div className={styles.input_group}>
-            <input 
-              type="text" 
-              placeholder="Email or Phone Number" 
+            <input
+              type="text"
+              placeholder="Email or Phone Number"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required 
+              required
             />
           </div>
-          
+
           <div className={styles.input_group}>
-            <input 
-              type="password" 
-              placeholder="Password" 
+            <input
+              type="password"
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required 
+              required
             />
           </div>
 
@@ -65,11 +65,11 @@ const SignupPage = () => {
           <button type="submit" className={styles.create_button} disabled={loading}>
             {loading ? 'Creating Account...' : 'Create Account'}
           </button>
-          
+
           <button type="button" className={styles.google_button}>
             Sign up with Google
           </button>
-          
+
           <div className={styles.login_link}>
             <span>Already have an account?</span>
             <a href="/login">Log In</a>
