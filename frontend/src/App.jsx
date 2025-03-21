@@ -7,6 +7,8 @@ import global from './styles/global.module.scss'
 import ContactPage from './pages/ContactPage'
 import Login from './pages/Login'
 import HomePage from './pages/HomePage'
+import Footer from './components/Footer'
+import About from './pages/About'
 
 const App = () => {
   return (
@@ -20,9 +22,11 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<HomePage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/About' element={<About />} />
      
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }
