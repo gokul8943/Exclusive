@@ -6,6 +6,7 @@ import SignupPage from './pages/SignUpPage'
 import global from './styles/global.module.scss'
 import ContactPage from './pages/ContactPage'
 import Login from './pages/Login'
+import HomePage from './pages/HomePage'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path='/signup' element={<SignupPage />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='/contact' element={<ContactPage />} />
      
         </Routes>
