@@ -2,22 +2,23 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { signup } from '../slices/userSlice';
 import styles from './styles/SignUpPage.module.scss';
+import{ useNavigate }from 'react-router-dom'
 
 const SignupPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
   const dispatch = useDispatch();
   const { loading, error } = useSelector(state => state.user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch(signup({ name, email, password }));
+    const result = await dispatch(signup({ name, email, password }));
+    if (signup.fulfilled.match(result)) {
+      navigate('/login'); 
+    }
   };
-
-  console.log(name,email,password);
-  
-
   return (
     <div className={styles.signup_container}>
       <div className={styles.signup_image}>

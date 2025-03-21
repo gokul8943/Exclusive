@@ -1,0 +1,83 @@
+// ProductShowcase.module.scss
+.product_showcase {
+    background-color: #000;
+    color: white;
+    border-radius: 4px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+  
+  .showcase_content {
+    max-width: 50%;
+    
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  .dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #666;
+    
+    &.active {
+      background-color: #0de938; // Green color from the image
+    }
+  }
+  
+  .buy_now {
+    background-color: #0de938; // Green color
+    color: black;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: #0bc830;
+    }
+  }
+  
+  .showcase_image {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
